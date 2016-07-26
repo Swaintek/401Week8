@@ -18,6 +18,8 @@
 		8543EEC91D46865200F04AC3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8543EEC71D46865200F04AC3 /* Parse.framework */; };
 		8543EECB1D4686AB00F04AC3 /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8543EEC61D46865100F04AC3 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8543EECC1D4686AB00F04AC3 /* Parse.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8543EEC71D46865200F04AC3 /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85F9CBE21D47CE0100344534 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F9CBE11D47CE0100344534 /* LocationController.m */; };
+		85F9CBE51D47E02800344534 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F9CBE41D47E02800344534 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +50,10 @@
 		8543EEC01D46826B00F04AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8543EEC61D46865100F04AC3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
 		8543EEC71D46865200F04AC3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Carthage/Build/iOS/Parse.framework; sourceTree = "<group>"; };
+		85F9CBE01D47CE0100344534 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		85F9CBE11D47CE0100344534 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		85F9CBE31D47E02800344534 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		85F9CBE41D47E02800344534 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,10 @@
 				8543EEB51D46826A00F04AC3 /* ViewController.h */,
 				8543EEB61D46826A00F04AC3 /* ViewController.m */,
 				8543EEB81D46826A00F04AC3 /* Main.storyboard */,
+				85F9CBE31D47E02800344534 /* DetailViewController.h */,
+				85F9CBE41D47E02800344534 /* DetailViewController.m */,
+				85F9CBE01D47CE0100344534 /* LocationController.h */,
+				85F9CBE11D47CE0100344534 /* LocationController.m */,
 				8543EEBB1D46826B00F04AC3 /* Assets.xcassets */,
 				8543EEBD1D46826B00F04AC3 /* LaunchScreen.storyboard */,
 				8543EEC01D46826B00F04AC3 /* Info.plist */,
@@ -178,6 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F9CBE51D47E02800344534 /* DetailViewController.m in Sources */,
+				85F9CBE21D47CE0100344534 /* LocationController.m in Sources */,
 				8543EEB71D46826A00F04AC3 /* ViewController.m in Sources */,
 				8543EEB41D46826A00F04AC3 /* AppDelegate.m in Sources */,
 				8543EEB11D46826A00F04AC3 /* main.m in Sources */,
