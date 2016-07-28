@@ -22,10 +22,20 @@
         
         configuration.applicationId = @"appId";
         configuration.clientKey = @"myMasterKey";
-        configuration.server = @"https://ds-locationreminders-server.herokuapp.com/parse";
+        configuration.server = @"https://ds-location-reminders-server.herokuapp.com/parse";
     }]];
     
+    [self registerForNotification];
+    
     return YES;
+}
+
+- (void)registerForNotification{
+    
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+    
+    [[UIApplication sharedApplication]registerUserNotificationSettings:settings];
+    
 }
 
 

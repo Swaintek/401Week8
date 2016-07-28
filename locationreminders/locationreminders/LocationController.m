@@ -49,4 +49,37 @@
     
 }
 
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+    
+    NSLog(@"User Did Enter Region");
+    
+    UILocalNotification *notification = [[UILocalNotification alloc]init];
+    
+    notification.alertTitle = @"You have entered the Matrix...";
+    notification.alertBody = @"The 🎹";
+    
+    [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
+}
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

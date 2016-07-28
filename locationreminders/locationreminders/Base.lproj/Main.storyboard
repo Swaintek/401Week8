@@ -102,8 +102,66 @@
                     <view key="view" contentMode="scaleToFill" id="4m0-BI-guM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZp-2c-onD">
+                                <rect key="frame" x="262" y="419" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.84313725490000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="createReminderButtonSelected:" destination="0fO-PQ-lMj" eventType="touchUpInside" id="TeF-uK-sA9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter location name..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gy-Hj-Xnv">
+                                <rect key="frame" x="76" y="160" width="453" height="30"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.84313725490000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="453" id="97l-gf-Y5F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter radius" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0AF-6c-EbY">
+                                <rect key="frame" x="234" y="285" width="144" height="30"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.84313725490000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="dwM-Iz-lf1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter location name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ll6-wx-jSc">
+                                <rect key="frame" x="184" y="111" width="245" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter reminder radius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ub-kB-jG4">
+                                <rect key="frame" x="184" y="226" width="245" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ll6-wx-jSc" firstAttribute="centerX" secondItem="4m0-BI-guM" secondAttribute="centerX" id="51d-mh-lWf"/>
+                            <constraint firstAttribute="trailing" secondItem="9gy-Hj-Xnv" secondAttribute="trailing" id="6pJ-rI-GLd"/>
+                            <constraint firstItem="0AF-6c-EbY" firstAttribute="centerX" secondItem="4m0-BI-guM" secondAttribute="centerX" id="9K1-3t-7DZ"/>
+                            <constraint firstItem="Ll6-wx-jSc" firstAttribute="top" secondItem="vem-nM-jAf" secondAttribute="bottom" constant="47" id="AXv-NB-F51"/>
+                            <constraint firstItem="RZp-2c-onD" firstAttribute="top" secondItem="0AF-6c-EbY" secondAttribute="bottom" constant="104" id="MBv-cX-mil"/>
+                            <constraint firstItem="9gy-Hj-Xnv" firstAttribute="leading" secondItem="4m0-BI-guM" secondAttribute="leading" id="YM8-xM-KpU"/>
+                            <constraint firstItem="RZp-2c-onD" firstAttribute="centerX" secondItem="4m0-BI-guM" secondAttribute="centerX" id="dhH-Aq-ddt"/>
+                            <constraint firstItem="9gy-Hj-Xnv" firstAttribute="centerX" secondItem="4m0-BI-guM" secondAttribute="centerX" id="fgh-zq-hHr"/>
+                            <constraint firstItem="9gy-Hj-Xnv" firstAttribute="top" secondItem="Ll6-wx-jSc" secondAttribute="bottom" constant="28" id="gtB-cz-Om1"/>
+                            <constraint firstItem="0ub-kB-jG4" firstAttribute="centerX" secondItem="4m0-BI-guM" secondAttribute="centerX" id="uJH-Nf-ufe"/>
+                            <constraint firstItem="0AF-6c-EbY" firstAttribute="top" secondItem="0ub-kB-jG4" secondAttribute="bottom" constant="38" id="yNP-T6-Mhg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationName" destination="9gy-Hj-Xnv" id="j3J-eV-Jky"/>
+                        <outlet property="userRadius" destination="0AF-6c-EbY" id="x5g-NZ-K6t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGb-dK-aI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
